@@ -3,13 +3,12 @@ import { StyleSheet } from 'react-native';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
-
+import TimerComponent from '../components/timer/TimerComponent';
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabOneScreen.tsx" />
+      <Text style={styles.title}>Press Start and become Productive!</Text>
+      <TimerComponent/>
     </View>
   );
 }
@@ -21,8 +20,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 20,
+    fontSize: 28,
+    color: '#333',
+    textAlign: 'center',
     fontWeight: 'bold',
+    marginBottom: 20,
   },
   separator: {
     marginVertical: 30,
