@@ -25,10 +25,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rijultp.TwoMinApp"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cb751115-c9c2-4955-9e4b-4bdbc8de9a8b"
+      }
     }
   }
 }
